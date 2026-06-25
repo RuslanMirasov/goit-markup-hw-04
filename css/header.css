@@ -35,7 +35,9 @@
 .navigation .link,
 .contacts-list .link {
   display: block;
+  position: relative;
   padding: 24px 0px;
+  transition: color var(--transition);
 }
 
 .navigation .link {
@@ -51,7 +53,19 @@
   font-style: normal;
 }
 
-.header li a:hover,
-.header li a:focus {
+.link:hover,
+.link:focus,
+.link.current {
   color: var(--ocean);
+}
+
+.link.current:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  bottom: -1px;
+  border-radius: 2px;
+  background-color: var(--ocean);
 }

@@ -11,6 +11,7 @@
 
 .footer-info {
   display: inline-block;
+  vertical-align: top;
   margin-right: 120px;
   max-width: 264px;
 }
